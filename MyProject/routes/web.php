@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\LoginController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,4 +17,16 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
+
+Route::get('/products/add', [ProductController::class, 'create'])->name('products.add');
+Route::post('/products/add', [ProductController::class, 'create'])->name('products.welcome');
+Route::get('/auth/login', [LoginController::class, 'show'])->name('auth.login');
+Route::post('/auth/login', [LoginController::class, 'submit'])->name('login.submit');
+
+
+
+
+
+
+
