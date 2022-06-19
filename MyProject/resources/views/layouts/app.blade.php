@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
     <title>Новостной сайт</title>
 </head>
 <body>
@@ -22,8 +23,8 @@
         </ul>
 
         <div class="col-md-3 text-end">
-            <button type="button" class="btn btn-outline-primary me-2"><a href="{{ route('auth.login') }}"></a>Вход</button>
-            <button type="button" class="btn btn-primary">Регистрация</button>
+            <button type="button" class="btn btn-outline-primary me-2"><a href="{{ route('auth.login') }}">Вход</a></button>
+            <button type="button" class="btn btn-primary"><a href="{{ route('auth.register') }}">Регистрация</a></button>
         </div>
     </header>
 </div>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
@@ -23,6 +24,9 @@ Route::get('/products/add', [ProductController::class, 'create'])->name('product
 Route::post('/products/add', [ProductController::class, 'create'])->name('products.welcome');
 Route::get('/auth/login', [LoginController::class, 'show'])->name('auth.login');
 Route::post('/auth/login', [LoginController::class, 'submit'])->name('login.submit');
+Route::get('/auth/register', [RegisterController::class, 'show'])->name('auth.register');
+Route::post('/auth/register', [LoginController::class, 'submit'])->name('register.submit');
+
 
 
 
