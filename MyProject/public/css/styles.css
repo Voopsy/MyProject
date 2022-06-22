@@ -1,3 +1,44 @@
+.btn-outline-primary a {
+    text-decoration: none;
+}
 .btn-outline-primary {
     text-decoration: none;
+    border-color:#ff92c5;
+}
+.btn-outline-primary:hover {
+    color: rgb(0, 0, 0);
+    background: #ff92c5;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    border-color:#ff92c5;
+}
+.btn-outline-primary a {
+    color:black;
+}
+.btn-primary a {
+    text-decoration: none;
+    color:black;
+}
+.btn-primary:hover {
+    color: rgb(0, 0, 0);
+    background: #ff92c5;
+    tansition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    -moz-transition: all .3s linear;
+    border-color:#ff92c5;
+}
+.btn-primary {
+    background-color: rgb(185, 209, 255);
+    border-color: #ff92c5;
+    color:black;
+}
+body {
+    background: rgb(185, 209, 255);
+}
+.container {
+    background: rgb(185, 209, 255);
+}
+.border-bottom {
+    border-bottom: 1px solid #ff92c5!important;
 }

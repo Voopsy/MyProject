@@ -12,17 +12,8 @@ class LoginController extends Controller
     {
         return view('auth.login');
     }
-
     public function submit(LoginRequest $request)
     {
-        $user = User::where($request->validated())->first();
-        if ($user != null) {
-            auth()->login($user);
-            return redirect()->home();
-        } else {
-            return back()->withErrors([
-                'password' => 'Пароль не верен'
-            ]);
-        }
+        return view('home', ['users' => $users]);
     }
 }
