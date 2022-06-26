@@ -14,8 +14,11 @@ class RegisterController extends Controller
     }
     public function submit(RegisterRequest $request) {
 
-        $user = User::create($request->validated());
-        auth()->login($user);
-        return redirect()->home();
+        $user = new User();
+        $user->name = $req->input('name');
+        $user->email = $req->input('email');
+        $user->password = Hash::make($request->input('password'));
+        $user->save();
+        return redirect()->route('home');
     }
 }

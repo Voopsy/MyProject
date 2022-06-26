@@ -20,6 +20,10 @@
             <li><a href="{{ route('home') }}" class="nav-link px-2 link-secondary">Главная</a></li>
             <li><a href="#" class="nav-link px-2 link-dark">Все посты</a></li>
             <li><a href="{{ route('products.add') }}" class="nav-link px-2 link-dark">Добавить пост</a></li>
+            <li><a href="{{ route('contacts') }}" class="nav-link px-2 link-dark">Контакты</a></li>
+            <li><a href="{{ route('about_us') }}" class="nav-link px-2 link-dark">О нас</a></li>
+
+
         </ul>
 
         <div class="col-md-3 text-end">
@@ -32,6 +36,21 @@
 <main>
     @yield('content')
 </main>
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <div class="col-md-4 d-flex align-items-center">
+      <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+        <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+      </a>
+      <span class="mb-3 mb-md-0 text-muted">© 2022 Новостной сайт</span>
+    </div>
 
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"></use></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+      <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"></use></svg></a></li>
+    </ul>
+  </footer>
+</div>
 </body>
 </html>

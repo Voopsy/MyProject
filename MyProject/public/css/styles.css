@@ -42,3 +42,6 @@ body {
 .border-bottom {
     border-bottom: 1px solid #ff92c5!important;
 }
+.border-top {
+    border-top: 1px solid #ff92c5!important;
+}
