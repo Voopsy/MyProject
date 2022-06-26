@@ -46,31 +46,11 @@ body {
     border-top: 1px solid #ff92c5!important;
 }
 .hexagon {
-	width: 100px;
-	height: 20px;
-	background: linear-gradient(45deg, #eb79ff, #ff64b7);
-	position: relative;
+	width: 50px;
+	height: 50px;
+	background: linear-gradient(45deg, #ff92c5, #ff64b7);
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
     margin-right: 20px;
-}
-.hexagon:before {
-	content: "";
-	position: absolute;
-	top: -25px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-bottom: linear-gradient(45deg, #eb79ff, #ff64b7);
-}
-.hexagon:after {
-	content: "";
-	position: absolute;
-	bottom: -25px; 
-	left: 0;
-	width: 0;
-	height: 0;
-	border-left: 50px solid transparent;
-	border-right: 50px solid transparent;
-	border-top: linear-gradient(45deg, #eb79ff, #ff64b7);
 }
