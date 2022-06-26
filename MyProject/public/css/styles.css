@@ -45,7 +45,7 @@ body {
 .border-top {
     border-top: 1px solid #ff92c5!important;
 }
-.hexagon {
+.circle {
 	width: 50px;
 	height: 50px;
 	background: linear-gradient(45deg, #ff92c5, #ff64b7);
